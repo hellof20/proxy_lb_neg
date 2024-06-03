@@ -14,4 +14,4 @@ done < mapping.csv
 gcloud compute routers nats delete lb-nat --region=$region --project=$project_id --router lb-nat-router --quiet
 gcloud compute routers delete lb-nat-router --region $region --project=$project_id --quiet
 gcloud compute networks subnets delete proxy-only-subnet --project=$project_id --region $region --quiet
-gcloud compute addresses delete lb-ip --region=$region --project=$project_id --quiet    
+gcloud compute addresses delete lb-ip --region=$region --project=$project_id --quiet

@@ -29,7 +29,7 @@ gcloud compute routers nats create lb-nat \
     --auto-allocate-nat-external-ips \
     --project=$project_id
 
-while IFS="," read -r name ip port1 port2; do
+tail -n +2 mapping.csv | while IFS="," read -r name ip port1 port2; do
     name=$name
     backend_ip=$ip
     backend_port=$port1
@@ -93,8 +93,8 @@ while IFS="," read -r name ip port1 port2; do
         --ports=$frontend_port \
         --project=$project_id   
 
-    echo '-----------------'
-done < mapping.csv
+    echo '---------------------------------------------------'
+done
 
 echo 'done!' 
 

@@ -1,2 +1,3 @@
-game-1,35.202.71.205,80,8081
-game-2,35.202.71.205,80,8082
+backend_name,backend_ip,backend_port,frontend_port
+game-1,192.168.0.1,80,8081
+game-2,192.168.0.2,80,8082
