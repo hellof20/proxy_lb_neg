@@ -24,6 +24,10 @@ bash regional_proxy_lb_internet_neg.sh
 #### 要求
 - GCP和其他云通过专线或者VPN打通
 
+### 架构
+![image](https://github.com/hellof20/proxy_lb_neg/assets/8756642/bae0d631-d9df-453a-a0d7-dd23bb7c849d)
+
+
 #### 优势
 - TCP连接终结在边缘测
 - 就近上车，就近下车
