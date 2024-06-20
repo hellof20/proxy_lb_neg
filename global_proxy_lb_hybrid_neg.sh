@@ -67,7 +67,3 @@ tail -n +2 mapping.csv | while IFS="," read -r name ip port1 port2; do
 done
 
 echo 'done!' 
-
-
-#https://cloud.google.com/load-balancing/docs/tcp/set-up-ext-reg-tcp-proxy-migs?hl=zh-cn
-#https://cloud.google.com/load-balancing/docs/negs/internet-neg-concepts?hl=zh-cn#nat-support
